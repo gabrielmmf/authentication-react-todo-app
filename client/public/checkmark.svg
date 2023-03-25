@@ -1,0 +1,5 @@
+<?xml version="1.0" standalone="no"?>
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+        "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+        <svg class="tick" style="color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512">
+        <title>ionicons-v5-e</title><path d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z" style="fill:none;stroke:#7e57c2;stroke-miterlimit:10;stroke-width:32px" fill="#7e57c2"></path><polyline points="352 176 217.6 336 160 272" style="fill:none;stroke:#7e57c2;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"></polyline></svg> 
