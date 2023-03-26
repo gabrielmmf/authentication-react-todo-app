@@ -8,7 +8,7 @@ const ListItem = ({ task, getData }) => {
   const deleteItem = async () => {
     try {
 
-      const response = await fetch(`https://authentication-react-todo-app.herokuapp.com/todos/${task.id}`,
+      const response = await fetch(`${process.env.REACT_APP_SERVERURL}/todos/${task.id}`,
         {
           method: "DELETE"
         })

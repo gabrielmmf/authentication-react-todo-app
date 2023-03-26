@@ -40,7 +40,7 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
     console.log('editted');
     e.preventDefault();
     try {
-      const response = await fetch(`https://authentication-react-todo-app.herokuapp.com/todos/${task.id}`, {
+      const response = await fetch(`${process.env.REACT_APP_SERVERURL}/todos/${task.id}`, {
         method: "PUT",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
