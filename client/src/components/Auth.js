@@ -30,7 +30,7 @@ const Auth = () => {
 
     console.log("email: ", email, "password: ", password);
 
-    const response = await fetch(`${process.env.REACT_APP_SERVERURL}/${endpoint}`, {
+    const response = await fetch(`https://authentication-react-todo-app.herokuapp.com/${endpoint}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })

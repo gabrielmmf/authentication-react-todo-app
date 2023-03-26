@@ -19,7 +19,7 @@ const App = () => {
 
     try {
 
-      const response = await fetch(`${process.env.REACT_APP_SERVERURL}/todos/${userEmail}`);
+      const response = await fetch(`https://authentication-react-todo-app.herokuapp.com/todos/${userEmail}`);
 
       const json = await response.json();
 
