@@ -14,13 +14,14 @@
 
 ### :triangular_ruler: Project Status
 
-<h4 align="center"> 
+<h4>
 The project has already been completed and deployed! 😀
+<br/>
+<br/>
+👇
 </h4>
 
-### :computer: Deploy at Netlify: 
-
-[![Bookmark Style Card](https://svg.bookmark.style/api?url=https://gabrielmmf-auth-todolist.netlify.app/)](https://gabrielmmf-auth-todolist.netlify.app/)
+### :computer: [Deploy at Netlify](https://gabrielmmf-auth-todolist.netlify.app/)
 
 ---
 
@@ -32,6 +33,7 @@ The project has already been completed and deployed! 😀
 4. [Services Used](#gear-services-used)
 5. [Client Dependencies](#lock-client-dependencies)
 6. [Server Dependencies](#closed_lock_with_key-server-dependencies)
+7. [Project Roadmap](#round_pushpin-project-roadmap)
 7. [Running the project](#dvd-running-the-project)
 8. [Links](#link-links)
 9. [Author](#boy-author)
@@ -107,6 +109,31 @@ The following tools were used in the construction of the project:
   - Setup environment variables
 - [Uuid](https://www.npmjs.com/package/uuid)
   - Unique id generation
+---
+### :round_pushpin: Project roadmap
+- [x] Create and model postgres Local Database
+    - [x] Create Users and Todos tables
+    - [x] Insert first user
+    - [x] Insert first todo
+- [x] Create Backend
+
+  - [X] Connect to database
+  - [x] Create "todos/:userEmail" GET route
+  - [x] Create "todos" POST route
+    - [x] Generate unique id with uuid
+  - [x] Create "todos" PUT route
+  - [x] Create "todos/:id" delete route
+  - [x] Create "signup" post route
+    - [x] Generate hashed password with bcrypt
+    - [x] Generate access token with jsonwebtoken
+  - [x] Create "login" post route
+    - [x] Check hashed password with bcrypt.compare
+- [x] Create Main Page
+  - [x] Create ListHeader Component
+  - [x] Create ListItem Component
+  - [x] Create Modal component for editting and creating tasks
+- [x] Create Authentication Page
+- [x] Setup Cookies
 
 ---
 
@@ -154,17 +181,24 @@ $ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) to access the app in your browser
 
-<!--
+
 
 ## How to use
 
 ### 1 - When you access, you will see the Login/SignUp page
 
-![Homepage image](https://github.com/Lucasdfg07/Blog_Lucas_Fernandes/blob/master/public/readme/home.png)
+![Login image](https://github.com/gabrielmmf/authentication-react-todo-app/blob/main/public/readme/login.png?raw=true)
 
-### 2 - You can also see a lot of information on the Blog posts session.
+![Signup image](https://github.com/gabrielmmf/authentication-react-todo-app/blob/main/public/readme/signup.png?raw=true)
 
-![Posts](https://github.com/Lucasdfg07/Blog_Lucas_Fernandes/blob/master/public/readme/posts.png) -->
+### 2 - After the creation of your account, you will see your tasks
+#### The completed tasks have a green accent color
+
+![Signup image](https://github.com/gabrielmmf/authentication-react-todo-app/blob/main/public/readme/task_list.png?raw=true)
+
+### 3 - When you create or edit a task, a popup is shown, allowing you to enter the information of the task and submit the changes
+
+![Signup image](https://github.com/gabrielmmf/authentication-react-todo-app/blob/main/public/readme/create_or_edit.png?raw=true)
 
 ---
 
