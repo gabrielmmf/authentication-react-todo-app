@@ -184,9 +184,9 @@ Open [http://localhost:3000](http://localhost:3000) to access the app in your br
 <div align="center"><span style="font-weight:bold"> Made with ❤️ by</span></div>
 <div align="center">
 <a href="https://github.com/gabrielmmf">
- <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/77760042?v=4" width="100px;" alt="Gabriel Fialho profile photo"/>
+ <img width="100px" style="border-radius:50px" src="https://avatars.githubusercontent.com/u/77760042?v=4"  alt="Gabriel Fialho profile photo"/>
  <br />
- <sub style="font-size:20px; color:#8e00c1"><b>Gabriel Fialho</b></sub></a>
+ <sub style="font-size:20px; color:purple; margin:10px"><b>Gabriel Fialho</b></sub></a>
  
 <div style="font-weight:bold;margin:10px">
 👋🏽 Contact me!
