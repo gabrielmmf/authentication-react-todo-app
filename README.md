@@ -18,7 +18,9 @@
 The project has already been completed and deployed! 😀
 </h4>
 
-### :computer: Deploy at Netlify: <a href="https://gabrielmmf-auth-todolist.netlify.app/">ToDo App</a>
+### :computer: Deploy at Netlify: 
+
+[![Bookmark Style Card](https://svg.bookmark.style/api?url=https://gabrielmmf-auth-todolist.netlify.app/)](https://gabrielmmf-auth-todolist.netlify.app/)
 
 ---
 
@@ -196,7 +198,7 @@ Open [http://localhost:3000](http://localhost:3000) to access the app in your br
 <br/>
 <br/>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Gabriel_Fialho-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabrielmmf/)](https://www.linkedin.com/in/gabrielmmf/)
+[![Linkedin Badge](https://img.shields.io/badge/-Gabriel_Fialho-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabrielmmfialho/)](https://www.linkedin.com/in/gabrielmmfialho/)
 
 [![Github Badge](https://img.shields.io/badge/-Gabriel_Fialho-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/gabrielmmf)](https://github.com/gabrielmmf)
 
