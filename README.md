@@ -18,7 +18,9 @@
 ### :triangular_ruler: Project Status
 
 <h4>
-The project has already been completed and deployed! 😀
+The project has already been completed and deployed.
+<br/>
+But I'm always improving the code! 😀
 <br/>
 <br/>
 👇
@@ -46,6 +48,16 @@ The project has already been completed and deployed! 😀
 ## :bookmark_tabs: About
 
 This is my project that allows you to login, logout and make a personal todo list. The user are allowed to add, delete or edit tasks
+
+In this project, I reinforced my knowledge about:
+ - PostgreSQL
+ - Authentication
+ - CSS
+ - React Cookies
+ - Backend design
+ - Project design
+ - Project patterns
+ - Project principles
 
 ---
 
@@ -119,7 +131,6 @@ The following tools were used in the construction of the project:
     - [x] Insert first user
     - [x] Insert first todo
 - [x] Create Backend
-
   - [X] Connect to database
   - [x] Create "todos/:userEmail" GET route
   - [x] Create "todos" POST route
