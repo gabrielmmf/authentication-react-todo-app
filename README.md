@@ -58,7 +58,8 @@ The main features of the application are:
 - Set progress of the tasks
 - Delete tasks
 
-## <!-- ## :fire: Extra features
+<!--
+## :fire: Extra features
 
 - [x] Feature 1
 - [x] Feature 2
