@@ -155,7 +155,7 @@ $ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) to access the app in your browser
 
-## <!--
+<!--
 
 ## How to use
 
@@ -178,7 +178,7 @@ Open [http://localhost:3000](http://localhost:3000) to access the app in your br
 
 ---
 
-<div align="center"> Made with ❤️ by </div>
+<center> Made with ❤️ by </center>
 &nbsp;
 
 <div align="center">
