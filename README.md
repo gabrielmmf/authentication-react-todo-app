@@ -142,6 +142,10 @@ The following tools were used in the construction of the project:
 
 ### :dvd: Running the Project:
 
+#### You can test the application deployed [here](https://gabrielmmf-auth-todolist.netlify.app/)
+
+#### Or you can run it in your system:
+
 #### 1 - Clone the repository:
 
 ```bash
