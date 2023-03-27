@@ -178,7 +178,7 @@ Open [http://localhost:3000](http://localhost:3000) to access the app in your br
 
 ---
 
-<center> Made with ❤️ by </center>
+<div align="center"> Made with ❤️ by </div>
 &nbsp;
 
 <div align="center">
