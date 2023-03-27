@@ -34,7 +34,7 @@ The project has already been completed and deployed! 😀
 4. [Services Used](#gear-services-used)
 5. [Client Dependencies](#lock-client-dependencies)
 6. [Server Dependencies](#closed_lock_with_key-server-dependencies)
-7. [Running the project](#dvd-running-the-project) 
+7. [Running the project](#dvd-running-the-project)
 8. [Links](#link-links)
 9. [Author](#boy-author)
 
@@ -45,7 +45,6 @@ The project has already been completed and deployed! 😀
 This is my project that allows you to login, logout and make a personal todo list. The user are allowed to add, delete or edit tasks
 
 ---
-
 
 ## :heavy_check_mark: Features
 
@@ -59,15 +58,14 @@ The main features of the application are:
 - Set progress of the tasks
 - Delete tasks
 
-
-<!-- ## :fire: Extra features
----
+## <!-- ## :fire: Extra features
 
 - [x] Feature 1
 - [x] Feature 2
- -->
+      -->
 
 ---
+
 ### :hammer: Technologies
 
 The following tools were used in the construction of the project:
@@ -157,9 +155,7 @@ $ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) to access the app in your browser
 
-
-<!-- 
----
+## <!--
 
 ## How to use
 
@@ -181,18 +177,30 @@ Open [http://localhost:3000](http://localhost:3000) to access the app in your br
 ### :boy: Author
 
 ---
-<div align="center"><span style="font-weight:bold"> Made with ❤️ by</span></div>
+
+<center> Made with ❤️ by </center>
+&nbsp;
+
 <div align="center">
 <a href="https://github.com/gabrielmmf">
- <img width="100px" style="border-radius:50px" src="https://avatars.githubusercontent.com/u/77760042?v=4"  alt="Gabriel Fialho profile photo"/>
+ <img  width="100px" style="border-radius:50%" src="https://avatars.githubusercontent.com/u/77760042?v=4" alt="Gabriel Fialho profile photo"/>
  <br />
- <sub style="font-size:20px; color:purple; margin:10px"><b>Gabriel Fialho</b></sub></a>
- 
-<div style="font-weight:bold;margin:10px">
-👋🏽 Contact me!
+ <br />
+
+ <a href="https://github.com/gabrielmmf">
+    <img alt="Made by Gabriel Fialho" src="https://img.shields.io/badge/-Gabriel%20Fialho-%237519C1?style=for-the-badge">
+  </a>
 </div>
+&nbsp;
+  
+ 
+<div align="center">
+    👋🏽 Contact me!
+<br/>
+<br/>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Gabriel_Fialho-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabrielmmf/)](https://www.linkedin.com/in/gabrielmmf/)
 
 [![Github Badge](https://img.shields.io/badge/-Gabriel_Fialho-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/gabrielmmf)](https://github.com/gabrielmmf)
+
 </div>
