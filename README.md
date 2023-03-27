@@ -81,7 +81,7 @@ The following tools were used in the construction of the project:
 
 - [Github](https://github.com/) - Code Versioning
 - [Netlify](https://www.netlify.com/) - Frontend deploy
-- Cyclic.sh - Backend deploy
+- [Cyclic.sh](https://www.cyclic.sh/)  - Backend deploy
 - [ElephantSQL](https://www.elephantsql.com/) - Database server
 
 ---
