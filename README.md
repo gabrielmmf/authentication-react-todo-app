@@ -18,11 +18,7 @@
 The project has already been completed and deployed! 😀
 </h4>
 
-### :computer: Deploy
-
-<h4 align="center"> 
-	Project deployed at Netlify: <a href="https://gabrielmmf-auth-todolist.netlify.app/">ToDo App</a>
-</h4>
+### :computer: Deploy at Netlify: <a href="https://gabrielmmf-auth-todolist.netlify.app/">ToDo App</a>
 
 ---
 
