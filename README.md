@@ -1,6 +1,9 @@
 <!-- ![Logo of the project](https://github.com/Lucasdfg07/Blog_Lucas_Fernandes/blob/master/app/assets/images/logo.png) -->
 
-<h1 align="center">ToDo App</h1>
+<div align="center">
+<img alt="ToDo App logo" width="490px" src="https://github.com/gabrielmmf/authentication-react-todo-app/blob/main/public/readme/logo.png?raw=true"/>
+</div>
+
 <!-- <img alt="Proffy" src="./github/banner.png"> -->
 <p align="center">
   <img alt="Repository's size: " src="https://img.shields.io/github/repo-size/gabrielmmf/authentication-react-todo-app?style=for-the-badge">
@@ -34,9 +37,9 @@ The project has already been completed and deployed! 😀
 5. [Client Dependencies](#lock-client-dependencies)
 6. [Server Dependencies](#closed_lock_with_key-server-dependencies)
 7. [Project Roadmap](#round_pushpin-project-roadmap)
-7. [Running the project](#dvd-running-the-project)
-8. [Links](#link-links)
-9. [Author](#boy-author)
+8. [Running the project](#dvd-running-the-project)
+9. [Links](#link-links)
+10. [Author](#boy-author)
 
 ---
 
