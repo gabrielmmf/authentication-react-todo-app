@@ -290,4 +290,4 @@ $ git push origin feature/NewFeature
 
 ### :balance_scale: License
 
-Distributed under the MIT License. See [LICENSE.txt](./LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE.txt](https://github.com/gabrielmmf/authentication-react-todo-app/blob/main/LICENSE.txt) for more information.
