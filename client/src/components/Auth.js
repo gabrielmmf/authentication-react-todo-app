@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useCookies } from "react-cookie"
+import { ThreeDots } from 'react-loader-spinner'
 
 const Auth = () => {
   const [cookies, setCookie, removeCookie] = useCookies(null)
@@ -8,6 +9,7 @@ const Auth = () => {
   const [password, setPassword] = useState(null);
   const [confirmPassword, setConfirmPassword] = useState(null);
   const [isLogIn, setIsLogIn] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   console.log(cookies);
 
@@ -28,7 +30,7 @@ const Auth = () => {
       return;
     }
 
-    console.log("email: ", email, "password: ", password);
+    setIsLoading(true);
 
     const response = await fetch(`${process.env.REACT_APP_SERVERURL}/${endpoint}`, {
       method: 'POST',
@@ -37,6 +39,8 @@ const Auth = () => {
     })
 
     const data = await response.json();
+
+    setIsLoading(false);
 
     if (data.detail) {
       alert(data.detail);
@@ -53,29 +57,46 @@ const Auth = () => {
     <div className="auth-container">
       <div className="auth-container-box">
 
-        <form>
-          <h2>
-            {isLogIn ? 'Login' : 'Sign Up '}
-          </h2>
+        {!isLoading &&
 
-          <input
-            className="email-input"
-            type="email"
-            placeholder="Email"
-            onChange={(e) => setEmail(e.target.value)} />
-          <input
-            type="password"
-            placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)} />
-          {!isLogIn && <input
-            type="password"
-            placeholder="Confirm password"
-            onChange={(e) => setConfirmPassword(e.target.value)} />}
-          <button className="auth-button" onClick={(e) => handleSubmit(e, isLogIn ? 'login' : 'signup')} >{isLogIn ? 'Login' : 'Sign Up'}</button>
+          <form>
+            <h2>
+              {isLogIn ? 'Login' : 'Sign Up '}
+            </h2>
 
-          <span className="small-text">{isLogIn ? 'First Time? ' : 'Already have an account? '} <span className="link-text" onClick={toggleIsLogin}>{isLogIn ? 'Create an account' : 'Login'} </span></span>
+            <input
+              className="email-input"
+              type="email"
+              placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)} />
+            <input
+              type="password"
+              placeholder="Password"
+              onChange={(e) => setPassword(e.target.value)} />
+            {!isLogIn && <input
+              type="password"
+              placeholder="Confirm password"
+              onChange={(e) => setConfirmPassword(e.target.value)} />}
+            <button className="auth-button" onClick={(e) => handleSubmit(e, isLogIn ? 'login' : 'signup')} >{isLogIn ? 'Login' : 'Sign Up'}</button>
 
-        </form>
+            <span className="small-text">{isLogIn ? 'First Time? ' : 'Already have an account? '} <span className="link-text" onClick={toggleIsLogin}>{isLogIn ? 'Create an account' : 'Login'} </span></span>
+
+          </form>
+
+        }
+
+        {isLoading &&
+          <ThreeDots
+            height="350"
+            radius="9"
+            color="#fe91ff"
+            ariaLabel="three-dots-loading"
+            wrapperStyle={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+            wrapperClassName=""
+            visible={true} />
+        }
+
+
       </div>
     </div>
   )

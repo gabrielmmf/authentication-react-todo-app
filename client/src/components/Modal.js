@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import { useCookies } from 'react-cookie';
+import { ThreeDots } from 'react-loader-spinner'
 
 const Modal = ({ mode, setShowModal, getData, task }) => {
 
   const [cookies, setCookie, removeCookie] = useCookies(null);
 
   const editMode = mode === 'edit' ? true : false;
+
+  const [isLoading, setIsLoading] = useState(false);
 
   const [data, setData] = useState({
     user_email: editMode ? task.user_email : cookies.Email,
@@ -17,6 +20,7 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
   const postData = async (e) => {
     e.preventDefault();
     try {
+      setIsLoading(true);
       const response = await fetch(`${process.env.REACT_APP_SERVERURL}/todos`, {
 
         method: "POST",
@@ -31,6 +35,7 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
         getData();
 
       }
+      setIsLoading(false);
     } catch (error) {
       console.error(error);
     }
@@ -40,6 +45,7 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
     console.log('editted');
     e.preventDefault();
     try {
+      setIsLoading(true);
       const response = await fetch(`${process.env.REACT_APP_SERVERURL}/todos/${task.id}`, {
         method: "PUT",
         headers: { 'Content-Type': 'application/json' },
@@ -50,7 +56,7 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
         setShowModal(false);
         getData();
       }
-
+      setIsLoading(false);
     } catch (error) {
       console.error(error);
     }
@@ -71,33 +77,48 @@ const Modal = ({ mode, setShowModal, getData, task }) => {
     <div className="overlay">
       <div className="modal">
         <div className="form-title-container">
-          <h3> {mode} your task</h3>
+          <h3> <span style={{ textTransform: "capitalize" }}>{mode}</span> your task</h3>
           <button className="close-btn" onClick={() => setShowModal(false)}>X</button>
         </div>
-        <form>
-          <input
-            required
-            maxLength={30}
-            placeholder="Your task goes here"
-            name="title"
-            value={data.title}
-            onChange={handleChange}
-          />
-          <label htmlFor="range">Drag to select your current progress</label>
 
-          <input
-            id="range"
-            required
-            type="range"
-            min="0"
-            max="100"
-            name="progress"
-            value={data.progress}
-            onChange={handleChange}
-          />
+        {isLoading &&
+          <ThreeDots
+            height="100%"
+            radius="9"
+            color="#fe91ff"
+            ariaLabel="three-dots-loading"
+            wrapperStyle={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+            wrapperClassName=""
+            visible={true} />
+        }
+        {!isLoading &&
 
-          <button className="modal-button" type="submit" onClick={editMode ? editData : postData}>{mode}</button>
-        </form>
+          <form>
+            <input
+              required
+              maxLength={30}
+              placeholder="Your task goes here"
+              name="title"
+              value={data.title}
+              onChange={handleChange}
+            />
+            <label htmlFor="range">Drag to select your current progress</label>
+
+            <input
+              id="range"
+              required
+              type="range"
+              min="0"
+              max="100"
+              name="progress"
+              value={data.progress}
+              onChange={handleChange}
+            />
+
+            <button className="modal-button" type="submit" onClick={editMode ? editData : postData}>{mode}</button>
+          </form>
+        }
+
       </div>
     </div>
   )

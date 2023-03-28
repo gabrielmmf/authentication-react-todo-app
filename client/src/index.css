@@ -349,3 +349,27 @@ input[type="text"] {
 .task-title {
   width: 300px;
 }
+
+@media (max-width: 1100px) {
+  .task-title {
+    width: 130px;
+  }
+}
+
+@media (max-width: 800px) {
+  .outer-bar {
+    width: 120px;
+  }
+}
+
+@media (max-width: 680px) {
+  .outer-bar {
+    width: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .outer-bar {
+    display: none;
+  }
+}
