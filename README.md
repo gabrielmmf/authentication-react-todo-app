@@ -36,17 +36,18 @@ But I'm always improving the code! 😀
 
 1. [About](#bookmark_tabs-about)
 2. [Features](#heavy_check_mark-features)
-3. [How To Use](#crystal_ball-how-to-use)
-4. [Technologies](#hammer-technologies)
-5. [Services Used](#gear-services-used)
-6. [Client Dependencies](#lock-client-dependencies)
-7. [Server Dependencies](#closed_lock_with_key-server-dependencies)
-8. [Project Roadmap](#round_pushpin-project-roadmap)
-9. [Running the project](#dvd-running-the-project)
-10. [Contributing](#memo-contributing)
-11. [Author](#boy-author)
-12. [Links](#link-links)
-13. [License](#balance_scale-license)
+3. [How to use](#crystal_ball-how-to-use)
+4. [Database diagram](#file_cabinet-database-diagram)
+5. [Technologies](#hammer-technologies)
+6. [Services Used](#gear-services-used)
+7. [Client Dependencies](#lock-client-dependencies)
+8. [Server Dependencies](#closed_lock_with_key-server-dependencies)
+9. [Project Roadmap](#round_pushpin-project-roadmap)
+10. [Running the project](#dvd-running-the-project)
+11. [Contributing](#memo-contributing)
+12. [Author](#boy-author)
+13. [Links](#link-links)
+14. [License](#balance_scale-license)
 
 ---
 
@@ -107,6 +108,10 @@ The main features of the application are:
       -->
 
 ---
+
+### :file_cabinet: Database diagram
+
+![Database image](https://github.com/gabrielmmf/authentication-react-todo-app/blob/main/public/readme/diagram.png?raw=true)
 
 ### :hammer: Technologies
 
